@@ -1,0 +1,8 @@
+<form method = "post" action = "/home">
+  {{ form.csrf_token }}
+  {{form.firstname.label }} {{form.firstname}}
+  {{form.lastname.label }} {{form.lastname }}
+  {{form.schoolclass.label }}  {{form.schoolclass}}
+  {{form.submit}}
+
+</form>

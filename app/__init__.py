@@ -1,11 +1,10 @@
 from flask import Flask  
-from config import Config
 from flask_sqlalchemy import SQLAlchemy 
 from flask_script import Manager
 from flask_migrate import Migrate, MigrateCommand
 
 app = Flask(__name__)
-app.config.from_object('config')
+app.config.from_object('config.Config')
 
 db = SQLAlchemy(app)
 
